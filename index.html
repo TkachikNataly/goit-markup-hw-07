@@ -91,7 +91,8 @@
                             </svg>
                         </div>
                         <h3 class="zest__subtitle">пунктуальность</h3>
-                        <p class="zest__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                        <p class="zest__text">Задача организации, в особенности же рамки и место обучения кадров влечет
+                            за
                             собой.</p>
                     </li>
                     <li class="zest-list__item">
@@ -113,7 +114,8 @@
                             </svg>
                         </div>
                         <h3 class="zest__subtitle">современные технологии</h3>
-                        <p class="zest__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        <p class="zest__text">Значимость этих проблем настолько очевидна, что реализация плановых
+                            заданий.
                         </p>
                     </li>
                 </ul>
@@ -385,7 +387,8 @@
                 <a href="" class="footer-logo"><span class="logo__span">Web</span>Studio</a>
                 <address class="footer-contakt__address">
                     <ul class="footer-list">
-                        <li class="footer-list__item"><a class="footer-link-adress link" href="">г. Киев, пр-т Леси Украинки,
+                        <li class="footer-list__item"><a class="footer-link-adress link" href="">г. Киев, пр-т Леси
+                                Украинки,
                                 26</a>
                         </li>
                         <li class="footer-list__item"><a class="footer-link"
@@ -452,54 +455,55 @@
         </div>
 
     </footer>
+        <!--Modal-->
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
-            <button data-modal-close class="close-button bt" type="button"><svg class="svg-modal" width="11px"
+            <button data-modal-close class="close-button" type="button"><svg class="svg-modal" width="11px"
                     height="11px">
                     <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
                 </svg>
             </button>
             <form action="#" class="form-modal">
-                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-                <div class="form-part">
-                    <label class="form-label" for="user-name">Имя</label>
+                <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+                <div class="modal__form">
+                    <label class="modal__label" for="user-name">Имя</label>
                     <span class="form-modal-spam">
-                        <input class="form-input" type="text" name="user-name" id="user-name" />
+                        <input class="form-modal-spam__input" type="text" name="user-name" id="user-name" />
                         <svg class="form-icon" width="18" height="18">
                             <use class="svg-modal" href="./images/symbol-defs.svg#icon-person-black-18dp-1-1">
                             </use>
                         </svg>
                     </span>
                 </div>
-                <div class="form-part">
-                    <label class="form-label" for="tel">Телефон</label>
+                <div class="modal__form">
+                    <label class="modal__label" for="tel">Телефон</label>
                     <span class="form-modal-spam">
-                        <input class="form-input" type="tel" name="tel" id="tel" />
+                        <input class="form-modal-spam__input" type="tel" name="tel" id="tel" />
                         <svg class="form-icon" width="18" height="18">
                             <use class="svg-modal" href="./images/symbol-defs.svg#icon-phone-black-18dp-1-1">
                             </use>
                         </svg>
                     </span>
                 </div>
-                <div class="form-part">
-                    <label class="form-label" for="user-mail">Почта</label>
+                <div class="modal__form">
+                    <label class="modal__label" for="user-mail">Почта</label>
                     <span class="form-modal-spam">
-                        <input class="form-input" type="email" name="user-mail" id="user-mail" />
+                        <input class="form-modal-spam__input" type="email" name="user-mail" id="user-mail" />
                         <svg class="form-icon" width="18" height="18">
                             <use class="svg-modal" href="./images/symbol-defs.svg#icon-email-black-18dp-1-1">
                             </use>
                         </svg>
                     </span>
                 </div>
-                <div class="form-part form-part-comment">
-                    <label class="form-label">Комментарий</label>
+                <div class="modal__comment">
+                    <label class="modal__label">Комментарий</label>
                     <textarea name="user-comments" id="user-comments" placeholder="Введите текст"
-                        class="form-comments"></textarea>
+                        class="modal__text"></textarea>
                 </div>
-                <div class="form-modal-checkbox">
-                    <input class="modal-checkbox visually-hidden " type="checkbox" id="modal-checkbox" />
-                    <label class="form-label-checkbox " for="modal-checkbox">
-                        <span class="checkbox-link">
+                <div class="checkbox">
+                    <input class="modal-checkbox " type="checkbox" id="modal-checkbox" />
+                    <label class="modal-checkbox__label" for="modal-checkbox">
+                        <span class="modal-checkbox__link">
                             <svg class="check-icon" width="11" height="8">
                                 <use class="svg-modal" href="./images/symbol-defs.svg#icon-icon-chek">
                                 </use>
@@ -509,7 +513,7 @@
                         <a class="check-link" href="">Условия договора</a>
                     </label>
                 </div>
-                <button class="main-button modal-btn bt" type="submit">Отправить
+                <button class="modal-btn" type="submit">Отправить
                 </button>
             </form>
         </div>
