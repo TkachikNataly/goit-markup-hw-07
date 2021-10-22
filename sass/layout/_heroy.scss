@@ -1,0 +1,20 @@
+.heroy {
+    @extend .overlay;
+    background-color: var(--section-color);
+    padding: 200px 0;
+}
+.heroy-container {
+    @extend .container;
+    margin: 0 auto;
+
+}
+.heroy__title {
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    @include font(44px, 900, 1.36);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--lite-text-color);
+}

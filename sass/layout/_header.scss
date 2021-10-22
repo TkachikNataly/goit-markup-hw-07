@@ -5,6 +5,7 @@
 }
 
 .header-container {
+    @extend .container;
     display: flex;
     align-items: center;  
 }
@@ -14,33 +15,39 @@
     align-items: center;    
 }
 
-.header-logo {
+.logo {
+    @extend .link;
     padding-top: 24px;
     padding-bottom: 24px;
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(26px, 700, 1.19);
     letter-spacing: 0.03em;
     color: var(--logo-color);
+
+}
+.header-nav__logo {
     margin-right: 90px;
 }
 
+.logo__span {
+    color: var(--accent-color);
+}
+
 .header-list {
+    @extend .list;
     display: flex;
 }
 
-.header-item:not(:last-child) {
+.header-list__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header-link {
+.header-list__link {
+    @extend .link;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 500, 1.14);
     letter-spacing: 0.02em;
     color: var(--title-secondary-color);
     position: relative;
@@ -61,23 +68,25 @@
 .header-link-accent {
     color: var(--accent-color);
 }
-.header-contact-list {
+.header-contakt {
+    @extend .list;
     display: flex;
     align-items: center;
+}
+.header-container__contakt {
     margin-left: auto;
 }
-.header-item-contact:not(:last-child) {
+.header-contakt__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header-link-contakt {
+.header-contakt__link {
+    @extend .link;
     display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 500, 1.14);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     transition-property: color;
@@ -90,13 +99,4 @@
 }
 .header-link-contakt:hover .header-svg {
     fill: var(--accent-color);
-}
-.section-title-two {
-    display: block;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
 }

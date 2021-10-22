@@ -1,0 +1,36 @@
+.section-about {
+    padding-top: 0;
+}
+.about-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-list {
+    display: flex;
+}
+.about-img:not(:last-child) {
+    margin-right: 30px;
+}
+.about-signature {
+   display: flex;
+   position: relative; 
+}
+.about-signature-text {
+    display: flex;
+    background-color: var(--backround-about);
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--lite-text-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

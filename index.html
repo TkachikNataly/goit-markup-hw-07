@@ -14,32 +14,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
     <!--Header-->
     <header class="header">
-        <div class="container header-container">
+        <div class="header-container">
             <nav class="header-nav">
-                <a href="" class="header-logo link"><span class="logo-span">Web</span>Studio</a>
-                <ul class="header-list list">
-                    <li class="header-item">
-                        <a class="header-link current link" href="./index.html">Студия</a>
+                <a href="" class="logo header-nav__logo"><span class="logo__span">Web</span>Studio</a>
+                <ul class="header-list">
+                    <li class="header-list__item">
+                        <a class="header-list__link current" href="./index.html">Студия</a>
                     </li>
-                    <li class="header-item">
-                        <a class="header-link link" href="./porfolio.html">Портфолио</a>
+                    <li class="header-list__item">
+                        <a class="header-list__link" href="./porfolio.html">Портфолио</a>
                     </li>
-                    <li class="header-item">
-                        <a class="header-link link" href="">Контакты</a>
+                    <li class="header-list__item">
+                        <a class="header-list__link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
 
-            <ul class="header-contact-list list">
-                <li class="header-item-contact">
-                    <a class="header-link-contakt link" href="mailto:info@devstudio.com">
+            <ul class="header-contakt header-container__contakt">
+                <li class="header-contakt__item">
+                    <a class="header-contakt__link" href="mailto:info@devstudio.com">
                         <svg class="header-svg" width="16px" height="12px">
                             <use href="./images/symbol-defs.svg#icon-envelope">
                             </use>
@@ -47,7 +47,7 @@
                         Info@devstudio.com
                     </a>
                 </li>
-                <li class="header-item-contact"><a class="header-link-contakt phone link" href="tel:+380961111111">
+                <li class="header-contakt__item"><a class="header-contakt__link phone" href="tel:+380961111111">
                         <svg class="header-svg" width="10px" height="16px">
                             <use href="./images/symbol-defs.svg#icon-smartphone">
                             </use>
@@ -60,60 +60,60 @@
     <!--Main-->
     <main class="main">
         <!--Heroy-->
-        <section class="section-heroy overlay">
-            <div class="container heroy-container">
-                <h1 class="heroy-title">эффективные решения для вашего бизнеса</h1>
-                <button data-modal-open class="section-heroy-bt bt" type="button">Заказать услугу</button>
+        <section class="heroy">
+            <div class="heroy-container">
+                <h1 class="heroy__title">эффективные решения для вашего бизнеса</h1>
+                <button data-modal-open class="main-button" type="button">Заказать услугу</button>
             </div>
         </section>
         <!--Zest-->
         <section class="section">
-            <div class="container zest-container">
-                <h2 class="section-title-two-hidden" hidden>описание изюминок студии</h2>
-                <ul class="zest-list list">
-                    <li class="zest-item">
-                        <div class="zest-icon">
-                            <svg class="zest-icon-item" width="70px" height="70px">
-                                <use href="./images/symbol-defs.svg#icon-antenna-1" class="zest-svg">
+            <div class="zest">
+                <h2 class="zest__title" hidden>описание изюминок студии</h2>
+                <ul class="zest-list">
+                    <li class="zest-list__item">
+                        <div class="zest-list__icon">
+                            <svg width="70px" height="70px">
+                                <use href="./images/symbol-defs.svg#icon-antenna-1">
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="zest-item-three">внимание к деталям</h3>
-                        <p class="zest-p">Идейные соображения, а также начало повседневной работы по формированию
+                        <h3 class="zest__subtitle">внимание к деталям</h3>
+                        <p class="zest__text">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.
                         </p>
                     </li>
-                    <li class="zest-item icon-clock">
-                        <div class="zest-icon">
-                            <svg class="zest-icon-item" width="70px" height="70px">
-                                <use href="./images/symbol-defs.svg#icon-clock-1" class="zest-svg">
+                    <li class="zest-list__item">
+                        <div class="zest-list__icon">
+                            <svg width="70px" height="70px">
+                                <use href="./images/symbol-defs.svg#icon-clock-1">
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="zest-item-three">пунктуальность</h3>
-                        <p class="zest-p">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                        <h3 class="zest__subtitle">пунктуальность</h3>
+                        <p class="zest__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
                             собой.</p>
                     </li>
-                    <li class="zest-item icon-diagram">
-                        <div class="zest-icon">
-                            <svg class="zest-icon-item" width="70px" height="70px">
-                                <use href="./images/symbol-defs.svg#icon-diagram-1" class="zest-svg">
+                    <li class="zest-list__item">
+                        <div class="zest-list__icon">
+                            <svg width="70px" height="70px">
+                                <use href="./images/symbol-defs.svg#icon-diagram-1">
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="zest-item-three">планирование</h3>
-                        <p class="zest-p">Равным образом консультация с широким активом в значительной степени
+                        <h3 class="zest__subtitle">планирование</h3>
+                        <p class="zest__text">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li class="zest-item icon-astronaut">
-                        <div class="zest-icon">
-                            <svg class="zest-icon-item" width="70px" height="70px">
-                                <use href="./images/symbol-defs.svg#icon-astronaut-1" class="zest-svg">
+                    <li class="zest-list__item">
+                        <div class="zest-list__icon">
+                            <svg width="70px" height="70px">
+                                <use href="./images/symbol-defs.svg#icon-astronaut-1">
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="zest-item-three">современные технологии</h3>
-                        <p class="zest-p">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        <h3 class="zest__subtitle">современные технологии</h3>
+                        <p class="zest__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
                     </li>
                 </ul>
@@ -439,7 +439,7 @@
                     <div class="subscribe-email">
                         <label class="subscribe-label" for="email"></label>
                         <input type="email" name="email" id="email" placeholder="E-mail" class="subscribe-input" />
-                        <button class="section-heroy-bt subscribe-button" type="submit">
+                        <button class="main-button subscribe-button" type="submit">
                             <span class="subscribe-btn-text">Подписаться</span>
                             <svg class="svg-subscribe" width="24" height="24">
                                 <use href="./images/symbol-defs.svg#icon-icon-send-1" class="svg-send">
@@ -493,12 +493,8 @@
                 </div>
                 <div class="form-part form-part-comment">
                     <label class="form-label">Комментарий</label>
-                    <textarea
-                    name="user-comments"
-                    id="user-comments"
-                    placeholder="Введите текст"
-                    class="form-comments"
-                    ></textarea>
+                    <textarea name="user-comments" id="user-comments" placeholder="Введите текст"
+                        class="form-comments"></textarea>
                 </div>
                 <div class="form-modal-checkbox">
                     <input class="modal-checkbox visually-hidden " type="checkbox" id="modal-checkbox" />
@@ -513,7 +509,7 @@
                         <a class="check-link" href="">Условия договора</a>
                     </label>
                 </div>
-                <button class="section-heroy-bt modal-btn bt" type="submit">Отправить
+                <button class="main-button modal-btn bt" type="submit">Отправить
                 </button>
             </form>
         </div>
