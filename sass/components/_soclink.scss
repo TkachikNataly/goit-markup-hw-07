@@ -1,4 +1,5 @@
 .soc-link {
+    @extend .link;
     display: flex;
     width: 100%;
     height: 100%;

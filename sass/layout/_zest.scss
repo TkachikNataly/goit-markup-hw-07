@@ -1,4 +1,7 @@
 .zest {
+    @extend .section;
+}
+.zest__contaainer {
     @extend .container;
     display: block;
     text-align: center;
@@ -48,11 +51,4 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     padding: 0;
-}
-.section-title-two {
-    display: block;
-    margin-bottom: 50px;
-    @include font(36px, 700, 1.17);
-    text-align: center;
-    letter-spacing: 0.03em;
 }

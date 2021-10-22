@@ -1,31 +1,38 @@
-.section-about {
+.about {
+    @extend .section;
     padding-top: 0;
 }
-.about-container {
+.about__container {
+    @extend .container;
     text-align: center;
     margin: 0 auto;
 }
-
+.about__title {
+    display: block;
+    margin-bottom: 50px;
+    @include font(36px, 700, 1.17);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 .about-list {
+    @extend.list;
     display: flex;
 }
-.about-img:not(:last-child) {
+.about-list__item:not(:last-child) {
     margin-right: 30px;
 }
 .about-signature {
    display: flex;
    position: relative; 
 }
-.about-signature-text {
+.about-signature__text {
     display: flex;
     background-color: var(--backround-about);
     width: 100%;
     height: 70px;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 700, 1.14);
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
